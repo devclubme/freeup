@@ -1,3 +1,57 @@
 .offer {
   background-color: #ffcf55;
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 57px 120px 120px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .leftContent {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+      margin-right: 100px;
+      .title {
+        font-size: 58px;
+        font-weight: 700;
+      }
+      .description {
+        margin-top: 60px;
+      }
+    }
+
+    .rightContent {
+      flex: 6;
+      .panelWrapper {
+        position: relative;
+        .panel {
+          border: 3px solid #000000;
+          border-radius: 15px;
+          background: #ffffff;
+          padding: 55px 65px 55px 65px;
+          display: flex;
+          flex-direction: column;
+          -webkit-box-shadow: 10px 10px 0px 0px #000000;
+          box-shadow: 36px 36px 0px 0px #000000;
+          .panelTitle {
+            font-size: 32px;
+            font-weight: 700;
+          }
+          .panelList {
+            list-style-type: none;
+            .panelListItem {
+              margin-top: 25px;
+            }
+          }
+        }
+        .arrowWrapper {
+          position: absolute;
+          right: -30px;
+          bottom: -30px;
+        }
+      }
+    }
+  }
 }
