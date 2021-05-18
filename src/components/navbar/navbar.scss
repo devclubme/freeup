@@ -1,14 +1,14 @@
 .navbar {
   width: 100%;
-
   .wrapper {
     width: 100%;
-    padding: 43px 120px;
+    padding: 43px 120px 0px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .logo {
       flex: 1;
+      cursor: pointer;
     }
     .menu {
       display: flex;
@@ -21,6 +21,7 @@
         list-style-type: none;
         .menuItem {
           margin-right: 60px;
+          cursor: pointer;
         }
       }
       .register {
@@ -31,6 +32,7 @@
         background-color: transparent;
         font-size: 16px;
         font-weight: 700;
+        cursor: pointer;
       }
     }
   }
