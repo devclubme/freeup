@@ -3,7 +3,7 @@ import info from 'assets/info.svg';
 import './reward.scss';
 const Reward = () => {
   return (
-    <div className="reward">
+    <div className="reward" id="reward">
       <div className="wrapper">
         <div className="rewardCardWrapper">
           <div className="rewardCard">

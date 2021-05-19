@@ -5,7 +5,7 @@ import workshop from 'assets/workshop.png';
 import './period.scss';
 const Period = () => {
   return (
-    <div className="period">
+    <div className="period" id="period">
       <div className="wrapper">
         <div className="topContent">
           <div className="topLeft">

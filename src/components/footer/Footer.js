@@ -8,23 +8,39 @@ const Footer = () => {
     <div className="footer">
       <div className="wrapper">
         <div className="column">
-          <div className="logoWrapper">
-            <img src={logo} alt="logo" className="logo" />
-          </div>
+          <a href="#hero">
+            <div className="logoWrapper">
+              <img src={logo} alt="logo" className="logo" />
+            </div>
+          </a>
           <span className="description">Tvoj put ka frilensu</span>
         </div>
         <div className="column">
           <span className="title">Navigacija</span>
-          <span className="item">Šta nudimo</span>
-          <span className="item">Vrijeme održavanja</span>
-          <span className="item">Mentori</span>
-          <span className="item">Nagrade</span>
+          <a href="#offer" className="item">
+            Šta nudimo
+          </a>
+          <a href="#period" className="item">
+            Vrijeme održavanja
+          </a>
+          <a href="#mentor" className="item">
+            Mentori
+          </a>
+          <a href="#reward" className="item">
+            Nagrade
+          </a>
         </div>
         <div className="column">
           <span className="title">Organizatori</span>
-          <span className="item">DevClub</span>
-          <span className="item">Grafostanica</span>
-          <span className="item">UNDP</span>
+          <a href="#hero" className="item">
+            DevClub
+          </a>
+          <a href="#hero" className="item">
+            Grafostanica
+          </a>
+          <a href="#hero" className="item">
+            UNDP
+          </a>
         </div>
         <div className="column-logo">
           <div className="imgWrapper">

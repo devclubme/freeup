@@ -5,7 +5,7 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="wrapper">
         <div className="topContent">
           <div className="left">

@@ -8,7 +8,7 @@ import './mentor.scss';
 
 const Mentor = () => {
   return (
-    <div className="mentor">
+    <div className="mentor" id="mentor">
       <div className="wrapper">
         <div className="topContent">
           <div className="leftTopContent">

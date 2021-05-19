@@ -3,7 +3,11 @@ import logo from 'assets/freeup-logo.png';
 import './navbar.scss';
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
-  const menuItems = ['KADA SE FREEUP ODRŽAVA', 'MENTORI', 'NAGRADE'];
+  const menuItems = [
+    { text: 'KADA SE FREEUP ODRŽAVA', section: 'period' },
+    { text: 'MENTORI', section: 'mentor' },
+    { text: 'NAGRADE', section: 'reward' },
+  ];
   const [selected, setIsSelected] = useState(null);
   const handleMenuItemClick = (item) => {
     setIsSelected(item);
@@ -22,7 +26,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className={`menuItem ${selected === item ? 'active' : ''}`}
                 onClick={() => handleMenuItemClick(item)}
               >
-                {item}
+                <a href={`#${item.section}`}>{item.text}</a>
               </li>
             ))}
           </ul>

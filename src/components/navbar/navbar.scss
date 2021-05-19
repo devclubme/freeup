@@ -36,6 +36,11 @@ $breakpoints: (
         .menuItem {
           margin-right: 60px;
           cursor: pointer;
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
         }
       }
       .register {
@@ -63,7 +68,7 @@ $breakpoints: (
           height: 3px;
           background-color: black;
           transform-origin: left;
-          transition: all 1s ease;
+          transition: all 0.7s ease-out;
         }
         &.active {
           span {

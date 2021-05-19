@@ -3,7 +3,7 @@ import arrow from 'assets/arrow.svg';
 import './offer.scss';
 const Offer = () => {
   return (
-    <div className="offer">
+    <div className="offer" id="offer">
       <div className="wrapper">
         <div className="leftContent">
           <h1 className="title">Vrijeme je da se oprobaš kao frilenser</h1>

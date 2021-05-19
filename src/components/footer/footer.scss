@@ -39,12 +39,13 @@ $breakpoints: (
       }
       .title {
         font-weight: 700;
-        cursor: pointer;
       }
 
       .item {
         margin-top: 15px;
         cursor: pointer;
+        text-decoration: none;
+        color: inherit;
       }
       .description {
         margin-top: 10px;
