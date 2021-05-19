@@ -1,3 +1,92 @@
 .reward {
   background-color: #fcfcfc;
+
+  .wrapper {
+    padding: 150px 150px 150px 120px;
+    .rewardCardWrapper {
+      position: relative;
+      .rewardCard {
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        border: 3px solid #000000;
+        -webkit-box-shadow: 20px 20px 0px 0px #000000;
+        box-shadow: 25px 25px 0px 0px #000000;
+        .content {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 40%;
+          padding: 75px 0px 100px 80px;
+          .topContent {
+            width: 100%;
+            .title {
+              font-size: 58px;
+              font-weight: 700;
+            }
+            .description {
+              font-family: 'Archivo', sans-serif;
+              margin-top: 20px;
+            }
+          }
+          .bottomContent {
+            margin-top: 115px;
+            .additionalInfo {
+              display: flex;
+              width: 100%;
+              .textInfo {
+                padding-left: 10px;
+                .title {
+                  font-weight: 700;
+                }
+                .description {
+                  margin-top: 10px;
+                  font-family: 'Archivo', sans-serif;
+                }
+              }
+            }
+          }
+        }
+      }
+      .rewardBadgeWrapper {
+        position: absolute;
+        top: -40px;
+        right: 10%;
+        height: 500px;
+        width: 400px;
+        .badge {
+          position: relative;
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+          background-color: black;
+          height: 100%;
+          width: 100%;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 99%;
+            height: 99%;
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+            background-color: #ffcf55;
+            background-image: url(/assets/freeUpBadge.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 2px;
+            right: 2px;
+          }
+        }
+        .triangle {
+          position: absolute;
+          width: 36px;
+          height: 43px;
+          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+          background-color: black;
+          top: 0px;
+          left: -35px;
+        }
+      }
+    }
+  }
 }
