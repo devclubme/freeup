@@ -7,7 +7,6 @@ import mentors from '../../data';
 import './mentor.scss';
 
 const Mentor = () => {
-  console.log(mentors);
   return (
     <div className="mentor">
       <div className="wrapper">

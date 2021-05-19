@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from 'components/footer/Footer';
 import Hero from 'components/hero/Hero';
 import Mentor from 'components/mentor/Mentor';
@@ -9,9 +9,10 @@ import Reward from 'components/reward/Reward';
 import './app.scss';
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Navbar />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Hero />
         <Offer />

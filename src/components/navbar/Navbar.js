@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import logo from 'assets/freeup-logo.png';
 import './navbar.scss';
 
-const Navbar = () => {
+const Navbar = ({ menuOpen, setMenuOpen }) => {
   const menuItems = ['KADA SE FREEUP ODRŽAVA', 'MENTORI', 'NAGRADE'];
   const [selected, setIsSelected] = useState(null);
   const handleMenuItemClick = (item) => {
     setIsSelected(item);
   };
-  console.log(selected);
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -28,6 +27,14 @@ const Navbar = () => {
             ))}
           </ul>
           <button className="register">PRIJAVI SE</button>
+        </div>
+        <div
+          className={`hamburger ${menuOpen ? 'active' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
         </div>
       </div>
     </div>

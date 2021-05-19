@@ -1,3 +1,11 @@
+@import '../../includeMedia.scss';
+
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1250px,
+);
+
 .navbar {
   width: 100%;
   .wrapper {
@@ -15,6 +23,9 @@
       flex: 5;
       justify-content: flex-end;
       align-items: center;
+      @include media('>=phone', '<=desktop') {
+        display: none;
+      }
       .menuItems {
         display: flex;
         align-items: center;
@@ -33,6 +44,41 @@
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
+      }
+    }
+    .hamburger {
+      display: none;
+      @include media('>=phone', '<=desktop') {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        span {
+          width: 32px;
+          height: 3px;
+          background-color: black;
+          transform-origin: left;
+          transition: all 1s ease;
+        }
+        &.active {
+          span {
+            &:first-child {
+              background-color: #ffcf55;
+              transform: rotate(
+                45deg
+              ); // this will make it rotate from center if transform-origin: left is not set on the default state above
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:last-child {
+              background-color: #ffcf55;
+              transform: rotate(-45deg);
+            }
+          }
+        }
       }
     }
   }

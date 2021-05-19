@@ -67,12 +67,14 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      margin-top: 60px;
       flex: 8;
       .bottomColumn {
         display: flex;
         flex-direction: column;
         flex: 4;
         padding: 20px 0px;
+        margin-right: 30px;
         .iconWrapper {
           height: 110px;
           width: 110px;
