@@ -1,3 +1,9 @@
+@import '../../includeMedia.scss';
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1250px,
+);
 .hero {
   width: 100%;
   .wrapper {
@@ -8,16 +14,30 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include media('>=phone', '<=tablet') {
+      padding: 0px 40px 100px 20px;
+    }
     .topContent {
       width: 100%;
       display: flex;
       align-items: center;
+      @include media('>=phone', '<=desktop') {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
       .left {
         flex: 6;
         margin-right: 100px;
+        @include media('>=phone', '<=desktop') {
+          margin: 0;
+          margin-top: 20px;
+        }
         .title {
           font-size: 78px;
           font-weight: 700;
+          @include media('>=phone', '<=desktop') {
+            font-size: 58px;
+          }
         }
         .description {
           margin-top: 60px;
@@ -49,10 +69,20 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
-
+          @include media('>=phone', '<=desktop') {
+            justify-content: flex-start;
+          }
           img {
             max-width: 100%;
             height: auto;
+            @include media('>=phone', '<=desktop') {
+              max-width: 80%;
+              height: 100%;
+            }
+            @include media('>=phone', '<=desktop') {
+              max-width: 60%;
+              height: 100%;
+            }
           }
         }
       }

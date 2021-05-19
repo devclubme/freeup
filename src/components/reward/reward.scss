@@ -1,8 +1,17 @@
+@import '../../includeMedia.scss';
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1250px,
+);
 .reward {
   background-color: #fcfcfc;
 
   .wrapper {
     padding: 150px 150px 150px 120px;
+    @include media('>=phone', '<=tablet') {
+      padding: 30px 40px 100px 20px;
+    }
     .rewardCardWrapper {
       position: relative;
       .rewardCard {
@@ -18,11 +27,22 @@
           height: 100%;
           width: 40%;
           padding: 75px 0px 100px 80px;
+          @include media('>=phone', '<=desktop') {
+            padding: 20px;
+            width: 55%;
+          }
+          @include media('>=phone', '<=1050px') {
+            margin-top: 300px;
+            width: 100%;
+          }
           .topContent {
             width: 100%;
             .title {
               font-size: 58px;
               font-weight: 700;
+              @include media('>=phone', '<=desktop') {
+                font-size: 32px;
+              }
             }
             .description {
               font-family: 'Archivo', sans-serif;
@@ -31,6 +51,9 @@
           }
           .bottomContent {
             margin-top: 115px;
+            @include media('>=phone', '<=1050px') {
+              margin-top: 40px;
+            }
             .additionalInfo {
               display: flex;
               width: 100%;
@@ -51,9 +74,22 @@
       .rewardBadgeWrapper {
         position: absolute;
         top: -40px;
-        right: 10%;
+        right: 100px;
         height: 500px;
         width: 400px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        @include media('>=phone', '<=desktop') {
+          height: 450px;
+          width: 250px;
+          top: -30px;
+        }
+        @include media('>=phone', '<=415px') {
+          height: 450px;
+          width: 250px;
+          right: 10px;
+        }
         .badge {
           position: relative;
           -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
@@ -61,7 +97,10 @@
           background-color: black;
           height: 100%;
           width: 100%;
-
+          @include media('>=phone', '<=desktop') {
+            height: 70%;
+            width: 100%;
+          }
           &:before {
             content: '';
             position: absolute;
@@ -73,18 +112,25 @@
             background-image: url(/assets/freeUpBadge.png);
             background-repeat: no-repeat;
             background-position: center;
+            background-size: contain;
             top: 2px;
             right: 2px;
+            @include media('>=phone', '<=desktop') {
+              top: 1.5px;
+              right: 1.3px;
+            }
           }
         }
         .triangle {
-          position: absolute;
           width: 36px;
           height: 43px;
           clip-path: polygon(0 100%, 100% 100%, 100% 0);
           background-color: black;
           top: 0px;
           left: -35px;
+          @include media('>=phone', '<=desktop') {
+            height: 33px;
+          }
         }
       }
     }

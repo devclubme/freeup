@@ -14,6 +14,9 @@ $breakpoints: (
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media('>=phone', '<=tablet') {
+      padding: 30px 40px 40px 20px;
+    }
     .logo {
       flex: 1;
       cursor: pointer;

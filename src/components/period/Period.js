@@ -70,7 +70,7 @@ const Period = () => {
                     <span>Kada:</span> 09.06. u 18:00 - 20:00h
                   </div>
                   <div className="where">
-                    <span>Gdje:</span>Zoom/Slack
+                    <span>Gdje:</span> Zoom/Slack
                   </div>
                 </li>
               </div>
@@ -81,7 +81,7 @@ const Period = () => {
                     <span>Kada:</span> 16.06. u 18:00 - 20:00h
                   </div>
                   <div className="where">
-                    <span>Gdje:</span>Zoom/Slack
+                    <span>Gdje:</span> Zoom/Slack
                   </div>
                 </li>
               </div>
@@ -108,7 +108,7 @@ const Period = () => {
                     <span>Kada:</span> 23.06. u 18:00 - 20:00h
                   </div>
                   <div className="where">
-                    <span>Gdje:</span>Slack
+                    <span>Gdje:</span> Slack
                   </div>
                 </li>
               </div>
