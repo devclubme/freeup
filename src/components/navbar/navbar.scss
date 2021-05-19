@@ -8,6 +8,11 @@ $breakpoints: (
 
 .navbar {
   width: 100%;
+  // @include media('>=phone', '<=desktop') {
+  //   position: fixed;
+  //   z-index: 4;
+  // }
+
   .wrapper {
     width: 100%;
     padding: 43px 120px 0px 120px;
@@ -68,12 +73,11 @@ $breakpoints: (
           height: 3px;
           background-color: black;
           transform-origin: left;
-          transition: all 0.7s ease-out;
+          transition: all 0.4s ease-out;
         }
         &.active {
           span {
             &:first-child {
-              background-color: #ffcf55;
               transform: rotate(
                 45deg
               ); // this will make it rotate from center if transform-origin: left is not set on the default state above
@@ -82,7 +86,6 @@ $breakpoints: (
               opacity: 0;
             }
             &:last-child {
-              background-color: #ffcf55;
               transform: rotate(-45deg);
             }
           }

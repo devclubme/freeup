@@ -1,0 +1,111 @@
+@import '../../includeMedia.scss';
+
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1250px,
+);
+
+.sidebar {
+  display: none;
+  @include media('>=phone', '<=desktop') {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    right: -100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-out;
+  }
+  &.active {
+    background-color: #ffcf55;
+    right: 0;
+  }
+  .hamburger {
+    width: 32px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+    span {
+      width: 32px;
+      height: 3px;
+      background-color: black;
+      transform-origin: left;
+      transition: all 0.4s ease-out;
+    }
+    &.active {
+      span {
+        &:first-child {
+          transform: rotate(
+            45deg
+          ); // this will make it rotate from center if transform-origin: left is not set on the default state above
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .sidebarList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    .imgWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      .item {
+        width: 250px;
+        margin-top: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: white;
+        -webkit-box-shadow: 4px 4px 0px 0px #000000;
+        box-shadow: 4px 4px 0px 0px #000000;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .register {
+      margin-top: 20px;
+      color: black;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      background-color: white;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      width: 179px;
+      height: 49px;
+      -webkit-box-shadow: 9px 9px 0px 0px #000000;
+      box-shadow: 9px 9px 0px 0px #000000;
+      cursor: pointer;
+    }
+  }
+}

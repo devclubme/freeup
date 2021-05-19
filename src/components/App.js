@@ -6,6 +6,7 @@ import Navbar from 'components/navbar/Navbar';
 import Offer from 'components/offer/Offer';
 import Period from 'components/period/Period';
 import Reward from 'components/reward/Reward';
+import Sidebar from 'components/sidebar/Sidebar';
 import './app.scss';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Hero />
         <Offer />
