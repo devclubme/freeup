@@ -77,11 +77,11 @@ $breakpoints: (
             height: auto;
             @include media('>=phone', '<=desktop') {
               max-width: 80%;
-              height: 100%;
+              height: auto;
             }
             @include media('>=phone', '<=desktop') {
               max-width: 60%;
-              height: 100%;
+              height: auto;
             }
           }
         }
