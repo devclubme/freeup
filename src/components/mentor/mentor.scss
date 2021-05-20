@@ -11,7 +11,7 @@ $breakpoints: (
     padding: 115px 125px 125px 125px;
     width: 100%;
     @include media('>=phone', '<=tablet') {
-      padding: 30px 40px 100px 20px;
+      padding: 30px 20px 100px 20px;
     }
     .topContent {
       display: flex;
@@ -32,6 +32,8 @@ $breakpoints: (
           img {
             max-width: 100%;
             height: auto;
+            object-fit: cover;
+            -o-object-fit: cover;
           }
         }
       }
@@ -55,19 +57,28 @@ $breakpoints: (
     .bottomContent {
       display: grid;
       grid-template-columns: repeat(auto-fill, 150px);
-      justify-content: space-between;
-      grid-gap: 20px;
+      grid-gap: 65px;
       margin-top: 60px;
-      @include media('>=phone', '<=desktop') {
-        flex-direction: column;
-      }
+      justify-content: center;
+      // @include media('>=phone', '<=430px') {
+      //   grid-template-columns: repeat(auto-fill, 125px);
+      //   grid-gap: 50px;
+      // }
+      // @include media('>=phone', '<=365px') {
+      //   grid-template-columns: repeat(auto-fill, 115px);
+      //   grid-gap: 20px;
+      // }
       .mentor {
+        width: 100%;
         display: flex;
-
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         margin-top: 40px;
         .imgWrapper {
           .avatar {
+            width: 125px;
+            height: 125px;
             object-fit: cover;
           }
         }

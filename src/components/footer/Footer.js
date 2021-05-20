@@ -13,33 +13,46 @@ const Footer = () => {
               <img src={logo} alt="logo" className="logo" />
             </div>
           </a>
-          <span className="description">Tvoj put ka frilensu</span>
+          <div className="description">
+            <a href="#hero" className="item">
+              Tvoj put <br />
+              ka frilensu
+            </a>
+            <div className="line"></div>
+          </div>
         </div>
         <div className="column">
           <span className="title">Navigacija</span>
           <a href="#offer" className="item">
             Šta nudimo
+            <div className="line"></div>
           </a>
           <a href="#period" className="item">
             Vrijeme održavanja
+            <div className="line"></div>
           </a>
           <a href="#mentor" className="item">
             Mentori
+            <div className="line"></div>
           </a>
           <a href="#reward" className="item">
             Nagrade
+            <div className="line"></div>
           </a>
         </div>
         <div className="column">
           <span className="title">Organizatori</span>
           <a href="#hero" className="item">
             DevClub
+            <div className="line"></div>
           </a>
           <a href="#hero" className="item">
             Grafostanica
+            <div className="line"></div>
           </a>
           <a href="#hero" className="item">
             UNDP
+            <div className="line"></div>
           </a>
         </div>
         <div className="column-logo">

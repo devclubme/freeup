@@ -1,6 +1,8 @@
 import React from 'react';
 import avatars from 'assets/hero-avatars.png';
-import sponsors from 'assets/sponsors.png';
+import devclub from 'assets/devclub.png';
+import grafostanica from 'assets/grafostanica.png';
+import undp from 'assets/undp.png';
 import './hero.scss';
 
 const Hero = () => {
@@ -19,7 +21,9 @@ const Hero = () => {
               na početku karijere koji žele da se oprobaju kao frilenseri na
               globalnom tržištu.
             </p>
-            <button className="register">Prijavi se</button>
+            <div className="buttonWrapper">
+              <button className="register">Prijavi se</button>
+            </div>
           </div>
           <div className="right">
             <div className="imgWrapper">
@@ -28,8 +32,25 @@ const Hero = () => {
           </div>
         </div>
         <div className="bottomContent">
-          <div className="sponsorsWrapper">
-            <img src={sponsors} alt="sponsors" />
+          <div className="bottomContentWrapper">
+            <div className="creators">
+              <div className="devclubWrapper">
+                <img src={devclub} alt="devclub" className="devclub" />
+              </div>
+              <div className="grafostanicaWrapper">
+                <img
+                  src={grafostanica}
+                  alt="grafostanica"
+                  className="grafostanica"
+                />
+              </div>
+            </div>
+            <div className="sponsoredBy">Sponsored by</div>
+            <div className="sponsor">
+              <div className="undpWrapper">
+                <img src={undp} alt="undp" className="undp" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

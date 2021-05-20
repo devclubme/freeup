@@ -20,7 +20,7 @@ $breakpoints: (
     align-items: flex-start;
     @include media('>=phone', '<=tablet') {
       flex-direction: column;
-      padding: 30px 40px 60px 20px;
+      padding: 30px 20px 60px 20px;
       align-items: center;
     }
     .column,
@@ -36,6 +36,12 @@ $breakpoints: (
       }
       .logoWrapper {
         cursor: pointer;
+        width: 100px;
+        img {
+          width: 101px;
+          height: 72px;
+          object-fit: cover;
+        }
       }
       .title {
         font-weight: 700;
@@ -46,9 +52,44 @@ $breakpoints: (
         cursor: pointer;
         text-decoration: none;
         color: inherit;
+        .line {
+          width: 0%;
+          margin-top: 5px;
+          height: 2px;
+          background: black;
+          transition: width 0.3s ease-out;
+        }
+        &:hover {
+          .line {
+            width: 100%;
+          }
+        }
       }
       .description {
-        margin-top: 10px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include media('>=phone', '<=tablet') {
+          align-items: center;
+          text-align: center;
+        }
+        .line {
+          width: 0%;
+          margin-top: 5px;
+          height: 2px;
+          background: black;
+          transition: width 0.3s ease-out;
+        }
+        &:hover {
+          .line {
+            width: 100%;
+          }
+        }
+        span {
+          display: inline-block;
+          margin-top: 5px;
+        }
       }
 
       .imgWrapper {
@@ -74,9 +115,14 @@ $breakpoints: (
         border-radius: 8px;
         width: 179px;
         height: 49px;
-        -webkit-box-shadow: 10px 10px 0px 0px #000000;
+        -webkit-box-shadow: 9px 9px 0px 0px #000000;
         box-shadow: 9px 9px 0px 0px #000000;
         cursor: pointer;
+        transition: all 0.3s ease-out;
+        &:hover {
+          -webkit-box-shadow: 5px 5px 0px 0px #000000;
+          box-shadow: 5px 5px 0px 0px #000000;
+        }
       }
       .date {
         width: 100%;

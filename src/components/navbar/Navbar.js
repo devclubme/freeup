@@ -26,11 +26,16 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className={`menuItem ${selected === item ? 'active' : ''}`}
                 onClick={() => handleMenuItemClick(item)}
               >
-                <a href={`#${item.section}`}>{item.text}</a>
+                <a href={`#${item.section}`}>
+                  {item.text}
+                  <div className="line" />
+                </a>
               </li>
             ))}
           </ul>
-          <button className="register">PRIJAVI SE</button>
+          <div className="buttonWrapper">
+            <button className="register">PRIJAVI SE</button>
+          </div>
         </div>
         <div
           className={`hamburger ${menuOpen ? 'active' : ''}`}

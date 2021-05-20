@@ -35,6 +35,7 @@ const Reward = () => {
           </div>
           <div className="rewardBadgeWrapper">
             <div className="badge"></div>
+            <div className="border"></div>
             <div className="triangle"></div>
           </div>
         </div>

@@ -64,12 +64,19 @@ $breakpoints: (
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 600px;
     .imgWrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 20px;
+      width: 150px;
+      img {
+        width: 150px;
+        height: 131px;
+        object-fit: contain;
+      }
     }
     a {
       text-decoration: none;
@@ -106,6 +113,12 @@ $breakpoints: (
       -webkit-box-shadow: 9px 9px 0px 0px #000000;
       box-shadow: 9px 9px 0px 0px #000000;
       cursor: pointer;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        -webkit-box-shadow: 5px 5px 0px 0px #000000;
+        box-shadow: 5px 5px 0px 0px #000000;
+      }
     }
   }
 }

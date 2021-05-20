@@ -58,6 +58,8 @@ $breakpoints: (
           box-shadow: 36px 36px 0px 0px #000000;
           @include media('>=phone', '<=tablet') {
             padding: 50px 20px;
+            -webkit-box-shadow: 16px 16px 0px 0px #000000;
+            box-shadow: 16px 16px 0px 0px #000000;
           }
           .panelTitle {
             font-size: 32px;
