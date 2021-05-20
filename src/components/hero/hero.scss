@@ -33,6 +33,7 @@ $breakpoints: (
           margin-top: 20px;
         }
         .title {
+          max-width: 500px;
           font-size: 78px;
           font-weight: 700;
           @include media('>=phone', '<=desktop') {
@@ -41,6 +42,7 @@ $breakpoints: (
         }
         .description {
           margin-top: 60px;
+          max-width: 480px;
           @include media('>=phone', '<=desktop') {
             margin-top: 20px;
           }
