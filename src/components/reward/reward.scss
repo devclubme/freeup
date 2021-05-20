@@ -91,8 +91,7 @@ $breakpoints: (
         }
         @include media('>=phone', '<=456px') {
           height: 450px;
-          width: 250px;
-          right: 50px;
+          right: 5px;
         }
 
         .badge {
@@ -136,6 +135,10 @@ $breakpoints: (
           left: -34px;
           @include media('>=phone', '<=desktop') {
             height: 33px;
+          }
+          @include media('>=phone', '<=456px') {
+            width: 10px;
+            left: -7px;
           }
         }
       }
