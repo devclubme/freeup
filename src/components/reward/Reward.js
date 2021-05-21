@@ -1,6 +1,3 @@
-import React from 'react';
-import info from 'assets/info.svg';
-import './reward.scss';
 const Reward = () => {
   return (
     <div className="reward" id="reward">
@@ -18,7 +15,7 @@ const Reward = () => {
               <div className="bottomContent">
                 <div className="additionalInfo">
                   <div className="infoIcon">
-                    <img src={info} alt="info" className="icon" />
+                    <img src="/assets/info.svg" alt="info" className="icon" />
                   </div>
                   <div className="textInfo">
                     <span className="title">

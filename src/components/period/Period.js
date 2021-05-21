@@ -1,8 +1,3 @@
-import React from 'react';
-import freelance from 'assets/freelancePanel.png';
-import q from 'assets/q&a.png';
-import workshop from 'assets/workshop.png';
-import './period.scss';
 const Period = () => {
   return (
     <div className="period" id="period">
@@ -25,7 +20,7 @@ const Period = () => {
         <div className="bottomContent">
           <div className="bottomColumn">
             <div className="iconWrapper">
-              <img src={freelance} alt="Freelance Panel" className="icon" />
+              <img src="/assets/freelancePanel.png" alt="Freelance Panel" className="icon" />
             </div>
             <div className="content">
               <h3 className="title">Frilenserski Panel</h3>
@@ -50,7 +45,7 @@ const Period = () => {
           </div>
           <div className="bottomColumn">
             <div className="iconWrapper">
-              <img src={workshop} alt="Workshop" className="icon" />
+              <img src="/assets/workshop.png" alt="Workshop" className="icon" />
             </div>
             <div className="content">
               <h3 className="title">Radionice</h3>
@@ -89,7 +84,7 @@ const Period = () => {
           </div>
           <div className="bottomColumn">
             <div className="iconWrapper">
-              <img src={q} alt="Questions & Answers" className="icon" />
+              <img src="/assets/q&a.png" alt="Questions & Answers" className="icon" />
             </div>
             <div className="content">
               <h3 className="title">Q&A Sesija</h3>

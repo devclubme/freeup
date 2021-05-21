@@ -1,10 +1,3 @@
-import React from 'react';
-import avatars from 'assets/hero-avatars.png';
-import devclub from 'assets/devclub.png';
-import grafostanica from 'assets/grafostanica.png';
-import undp from 'assets/undp.png';
-import './hero.scss';
-
 const Hero = () => {
   return (
     <div className="hero" id="hero">
@@ -27,7 +20,7 @@ const Hero = () => {
           </div>
           <div className="right">
             <div className="imgWrapper">
-              <img src={avatars} alt="Avatars illustration" />
+              <img src="/assets/hero-avatars.png" alt="Avatars illustration" />
             </div>
           </div>
         </div>
@@ -35,11 +28,11 @@ const Hero = () => {
           <div className="bottomContentWrapper">
             <div className="creators">
               <div className="devclubWrapper">
-                <img src={devclub} alt="devclub" className="devclub" />
+                <img src="/assets/devclub.png" alt="devclub" className="devclub" />
               </div>
               <div className="grafostanicaWrapper">
                 <img
-                  src={grafostanica}
+                  src="assets/grafostanica.png"
                   alt="grafostanica"
                   className="grafostanica"
                 />
@@ -48,7 +41,7 @@ const Hero = () => {
             <div className="sponsoredBy">Sponsored by</div>
             <div className="sponsor">
               <div className="undpWrapper">
-                <img src={undp} alt="undp" className="undp" />
+                <img src="/assets/undp.png" alt="undp" className="undp" />
               </div>
             </div>
           </div>

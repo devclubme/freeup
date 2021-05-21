@@ -1,6 +1,3 @@
-import React from 'react';
-import logo from 'assets/freeup-logo.png';
-import './sidebar.scss';
 const Sidebar = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={`sidebar ${menuOpen ? 'active' : ''}`}>
@@ -14,7 +11,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
       </div>
       <ul className="sidebarList">
         <div className="imgWrapper">
-          <img src={logo} alt="" className="logo" />
+          <img src="/assets/freeup-logo.png" alt="" className="logo" />
         </div>
 
         <a href="#period">

@@ -1,6 +1,3 @@
-import React from 'react';
-import arrow from 'assets/arrow.svg';
-import './offer.scss';
 const Offer = () => {
   return (
     <div className="offer" id="offer">
@@ -35,7 +32,7 @@ const Offer = () => {
               </ul>
             </div>
             <div className="arrowWrapper">
-              <img src={arrow} alt="arrow" className="arrow" />
+              <img src="/assets/arrow.svg" alt="arrow" className="arrow" />
             </div>
           </div>
         </div>

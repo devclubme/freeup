@@ -1,8 +1,3 @@
-import React from 'react';
-import logo from 'assets/freeup-logo.png';
-import logoSkewed from 'assets/logoSkewed.png';
-import './footer.scss';
-
 const Footer = () => {
   return (
     <div className="footer">
@@ -10,7 +5,7 @@ const Footer = () => {
         <div className="column">
           <a href="#hero">
             <div className="logoWrapper">
-              <img src={logo} alt="logo" className="logo" />
+              <img src="/assets/freeup-logo.png" alt="logo" className="logo" />
             </div>
           </a>
           <div className="description">
@@ -57,7 +52,7 @@ const Footer = () => {
         </div>
         <div className="column-logo">
           <div className="imgWrapper">
-            <img src={logoSkewed} alt="logo" />
+            <img src="/assets/logoSkewed.png" alt="logo" />
           </div>
         </div>
         <div className="column">

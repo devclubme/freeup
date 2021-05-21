@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import logo from 'assets/freeup-logo.png';
-import './navbar.scss';
+import { useState } from 'react';
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
   const menuItems = [
@@ -16,7 +14,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     <div className="navbar">
       <div className="wrapper">
         <div className="logo">
-          <img src={logo} alt="FreeUP logo" />
+          <img src="/assets/freeup-logo.png" alt="FreeUP logo" />
         </div>
         <div className="menu">
           <ul className="menuItems">
