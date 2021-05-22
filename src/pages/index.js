@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import {Head} from "next/document";
+
 import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
 import Mentor from '../components/mentor/Mentor';
@@ -12,18 +14,23 @@ const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="app">
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Hero />
-        <Offer />
-        <Period />
-        <Mentor />
-        <Reward />
+    <>
+      <Head>
+        <title>FreeUP</title>
+      </Head>
+      <div className="app">
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <div className="sections">
+          <Hero/>
+          <Offer/>
+          <Period/>
+          <Mentor/>
+          <Reward/>
+        </div>
+        <Footer/>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
