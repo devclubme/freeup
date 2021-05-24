@@ -37,16 +37,20 @@ const Footer = () => {
         </div>
         <div className="column">
           <span className="title">Organizatori</span>
-          <a href="#hero" className="item">
+          <a href="https://zurnal.devclub.me/" className="item">
             DevClub
             <div className="line"></div>
           </a>
-          <a href="#hero" className="item">
+          <a href="https://www.instagram.com/Grafostanica/" className="item">
             Grafostanica
             <div className="line"></div>
           </a>
-          <a href="#hero" className="item">
+          <a href="https://www.me.undp.org/" className="item">
             UNDP
+            <div className="line"></div>
+          </a>
+          <a href="mailto:contact@freeup.me" className="item">
+            Kontakt
             <div className="line"></div>
           </a>
         </div>
