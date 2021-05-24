@@ -6,12 +6,12 @@ const Period = () => {
           <div className="topLeft">
             <h1 className="title">Kada se FreeUP održava?</h1>
             <p className="description">
-              Tokom juna mjeseca imaćeš priliku da prisustvuješ na 5 online
+              Tokom juna mjeseca imaćeš priliku da prisustvuješ na 7 online
               događaja i to:
             </p>
           </div>
           <div className="topRight">
-            <div className="date">02.6 - 23.6</div>
+            <div className="date">02.6 - 30.6</div>
             <div className="rectangle-left" />
             <div className="rectangle-middle" />
             <div className="rectangle-right" />
@@ -23,21 +23,45 @@ const Period = () => {
               <img src="/assets/freelancePanel.png" alt="Freelance Panel" className="icon" />
             </div>
             <div className="content">
-              <h3 className="title">Frilenserski Panel</h3>
+              <h3 className="title">Priprema</h3>
               <p className="description">
-                Kao uvod u FreeUp, na panelu će govoriti 5 frilensera iz
-                različitih oblasti. Publika će tokom panela imati priliku da
-                postavlja pitanja. Panel je otvoren za sve zainteresovane.
+                Kao uvod u FreeUP, organizujemo panel na kojem će govoriti 5 iskusnih frilensera iz
+                različitih oblasti o svojim iskustvima. Publika će tokom panela imati priliku da
+                postavlja pitanja, a panel je otvoren za sve zainteresovane. Par dana kasnije slijedi
+                detaljnije predstavljanje programa učesnicima, a zatim i zatvaranje registracija.
               </p>
             </div>
             <ul className="eventDetails">
               <div className="eventItemWrapper">
                 <li className="eventItem">
+                  <div className="eventName">Frilenserski panel</div>
                   <div className="when">
-                    <span>Kada:</span> 16.06. u 18:00 - 20:00h
+                    <span>Kada:</span> 2. juna u 18:00 - 20:00h
                   </div>
                   <div className="where">
-                    <span>Gdje:</span>Zoom/Slack
+                    <span>Gdje:</span> Zoom/Slack
+                  </div>
+                </li>
+              </div>
+              <div className="eventItemWrapper">
+                <li className="eventItem">
+                  <div className="eventName">Predstavljanje FreeUP programa</div>
+                  <div className="when">
+                    <span>Kada:</span> 7. juna u 18:00 - 19:00h
+                  </div>
+                  <div className="where">
+                    <span>Gdje:</span> Zoom/Slack
+                  </div>
+                </li>
+              </div>
+              <div className="eventItemWrapper">
+                <li className="eventItem">
+                  <div className="eventName">Registracija</div>
+                  <div className="where">
+                    <span>Kako:</span> Sajt/Forma
+                  </div>
+                  <div className="when">
+                    <span>Rok:</span> 8. jun 23:59
                   </div>
                 </li>
               </div>
@@ -48,12 +72,13 @@ const Period = () => {
               <img src="/assets/workshop.png" alt="Workshop" className="icon" />
             </div>
             <div className="content">
-              <h3 className="title">Radionice</h3>
+              <h3 className="title">Pozor</h3>
               <p className="description">
-                Cilj radionice je da priblizi frilens platforme poput Upwork-a
-                ciljanoj grupi. Mentori, poput Jovana Cicmila, će dati konkretne
-                savjete kako da izgrade svoje profile i usluge kao konkurentne
-                na globalnom tržištu. Radionice su otvorene samo za registrovane
+                Obuka se sastoji od radionica, Q&A sesija i saradnje u Slack grupi.
+                Kroz radionice približićemo vam rad na frilens platformama poput Upwork-a.
+                Mentori, poput Jovana Cicmila, će vam dati konkretne
+                savjete kako da izgradite svoje profile i usluge da budu konkurentne
+                na globalnom tržištu. Radionice i Q&A sesije su samo za registrovane
                 učesnike.
               </p>
             </div>
@@ -62,7 +87,18 @@ const Period = () => {
                 <li className="eventItem">
                   <div className="eventName">I Radionica</div>
                   <div className="when">
-                    <span>Kada:</span> 09.06. u 18:00 - 20:00h
+                    <span>Kada:</span> 9. juna u 18:00 - 20:00h
+                  </div>
+                  <div className="where">
+                    <span>Gdje:</span> Zoom/Slack
+                  </div>
+                </li>
+              </div>
+              <div className="eventItemWrapper">
+                <li className="eventItem">
+                  <div className="eventName">I Q&A sesija</div>
+                  <div className="when">
+                    <span>Kada:</span> 14. juna u 18:00 - 19:00h
                   </div>
                   <div className="where">
                     <span>Gdje:</span> Zoom/Slack
@@ -73,7 +109,18 @@ const Period = () => {
                 <li className="eventItem">
                   <div className="eventName">II Radionica</div>
                   <div className="when">
-                    <span>Kada:</span> 16.06. u 18:00 - 20:00h
+                    <span>Kada:</span> 16. juna u 18:00 - 20:00h
+                  </div>
+                  <div className="where">
+                    <span>Gdje:</span> Zoom/Slack
+                  </div>
+                </li>
+              </div>
+              <div className="eventItemWrapper">
+                <li className="eventItem">
+                  <div className="eventName">II Q&A sesija</div>
+                  <div className="when">
+                    <span>Kada:</span> 21. juna u 18:00 - 19:00h
                   </div>
                   <div className="where">
                     <span>Gdje:</span> Zoom/Slack
@@ -87,23 +134,34 @@ const Period = () => {
               <img src="/assets/q&a.png" alt="Questions & Answers" className="icon" />
             </div>
             <div className="content">
-              <h3 className="title">Q&A Sesija</h3>
+              <h3 className="title">Frilensujmo!</h3>
               <p className="description">
-                Imaš dodatna pitanja? Nema problema! Na Q&A spremno odgovaramo
-                na sve tvoje nedoumice i predstavljamo najbolja rješenja za
-                probleme iz prakse prilikom registracije na konkretnu platformu,
-                pronalaženje klijenata, pisanja motivacionog pisma i sličnih
-                nedaća koje nas zateknu na početku.
+                Na kraju dajemo ti priliku da nam pokažeš koliko želiš da budeš frilenser.
+                Pokaži nam kako si usvojio savjete mentora tokom obuke tako što ćeš nam
+                poslati link na kreiran profil, klijente koje si pronašao i prijave za posao
+                koje si popunio. Najbolje ćemo nagraditi na završnom događaju.
               </p>
             </div>
             <ul className="eventDetails">
               <div className="eventItemWrapper">
                 <li className="eventItem">
+                  <div className="eventName">Učešće u takmičenju</div>
+                  <div className="where">
+                    <span>Kako:</span> Zadatak poslati na Sajt/Formu
+                  </div>
                   <div className="when">
-                    <span>Kada:</span> 23.06. u 18:00 - 20:00h
+                    <span>Rok:</span> 28. jun 23:59
+                  </div>
+                </li>
+              </div>
+              <div className="eventItemWrapper">
+                <li className="eventItem">
+                  <div className="eventName">Završni događaj i dodjela nagrada</div>
+                  <div className="when">
+                    <span>Kada:</span> 30. juna u 18:00 - 19:00h
                   </div>
                   <div className="where">
-                    <span>Gdje:</span> Slack
+                    <span>Gdje:</span> Zoom/Slack
                   </div>
                 </li>
               </div>

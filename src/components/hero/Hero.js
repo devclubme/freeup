@@ -10,7 +10,7 @@ const Hero = () => {
               bolje leži samostalan rad i širina globalnog tržišta.
               <br />
               <br />
-              <span>FreeUP</span> je informativna i praktična obuka za sve mlade
+              <span>FreeUP</span> je informativna, besplatna, online obuka za sve mlade
               na početku karijere koji žele da se oprobaju kao frilenseri na
               globalnom tržištu.
             </p>
@@ -38,7 +38,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="sponsoredBy">Sponsored by</div>
+            <div className="sponsoredBy">Podržao</div>
             <div className="sponsor">
               <div className="undpWrapper">
                 <img src="/assets/undp.png" alt="undp" className="undp" />

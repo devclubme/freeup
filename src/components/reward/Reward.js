@@ -6,10 +6,12 @@ const Reward = () => {
           <div className="rewardCard">
             <div className="content">
               <div className="topContent">
-                <h1 className="title">Nagrade čekaju one najuspješnije!</h1>
+                <h1 className="title">Nagrade za najuspješnije!</h1>
                 <p className="description">
-                  Naposletku, želimo da nagradimo one najupornije! Nakon kratkog
-                  osvrta na FreeUP obuku, slijedi dodjela nagrada!
+                  Na kraju, želimo da nagradimo one koji su se najviše potrudili! Nakon kratkog
+                  osvrta na FreeUP obuku, slijedi dodjela nagrada za učesnike koji su bili
+                  prisutni na svim radionicama i Q&A sesijama, a koji su na najbolji način usvojili
+                  savjete mentora!
                 </p>
               </div>
               <div className="bottomContent">
@@ -19,11 +21,12 @@ const Reward = () => {
                   </div>
                   <div className="textInfo">
                     <span className="title">
-                      Kako učesnik moze ostvariti nagradu?
+                      Kako učesnik može konkurisati za nagradu?
                     </span>
                     <p className="description">
-                      Ispunjen profil na Upwork-u, poslata prijava za posao,
+                      Ispunjen profil na Upwork-u ili sličnoj platformi, poslata prijava za posao,
                       primjer poslate prijave kao dokaz o prijavljivanju.
+                      Dodatni poeni za one koji obezbijede intervju za posao ili nađu klijenta u toku samog programa.
                     </p>
                   </div>
                 </div>
