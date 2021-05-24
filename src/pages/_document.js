@@ -1,12 +1,12 @@
 import BaseDocument, { Head, Html, Main, NextScript } from "next/document";
 
-const gtmContainerId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_CONTAINER_ID;
+const gaTrackingId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID;
 const gaScript = `\
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${gtmContainerId}');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', '${gaTrackingId}');
 `;
 
 const fbPixelId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
@@ -23,13 +23,25 @@ fbq('init', '${fbPixelId}');
 fbq('track', 'PageView');
 `;
 
+const hotJarScript = `\
+(function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:2418297,hjsv:6};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+`
+
 class Document extends BaseDocument {
   render() {
     return (
       <Html lang="sr">
         <Head>
-          {gtmContainerId && (
+          {gaTrackingId && (
             <>
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}></script>
               <script
                 dangerouslySetInnerHTML={{
                   __html: gaScript,
@@ -48,12 +60,19 @@ class Document extends BaseDocument {
                 <img
                   height="1"
                   width="1"
-                  style="display:none"
+                  style={{ display: "none" }}
                   src={`https://www.facebook.com/tr?id=${fbPixelId}&ev=PageView&noscript=1`}
                   alt=""
                 />
               </noscript>
             </>
+          )}
+          {(
+            <script
+              dangerouslySetInnerHTML={{
+                __html: hotJarScript,
+              }}
+            />
           )}
           <link
             href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;700;900&display=swap"
@@ -65,16 +84,6 @@ class Document extends BaseDocument {
           ></link>
         </Head>
         <body>
-          {gtmContainerId && (
-            <noscript>
-              <iframe
-                src={`https://www.googletagmanager.com/ns.html?id=${gtmContainerId}`}
-                height="0"
-                width="0"
-                style={{ display: "none", visibility: "hidden" }}
-              />
-            </noscript>
-          )}
           <Main />
           <NextScript />
         </body>
