@@ -10,12 +10,14 @@ const Hero = () => {
               bolje leži samostalan rad i širina globalnog tržišta.
               <br />
               <br />
-              <span>FreeUP</span> je informativna, besplatna, online obuka za sve mlade
-              na početku karijere koji žele da se oprobaju kao frilenseri na
-              globalnom tržištu.
+              <span>FreeUP</span> je informativna, besplatna, online obuka za
+              sve mlade na početku karijere koji žele da se oprobaju kao
+              frilenseri na globalnom tržištu.
             </p>
             <div className="buttonWrapper">
-              <button className="register">Prijavi se</button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform">
+                <button className="register">Prijavi se</button>
+              </a>
             </div>
           </div>
           <div className="right">
@@ -28,7 +30,11 @@ const Hero = () => {
           <div className="bottomContentWrapper">
             <div className="creators">
               <div className="devclubWrapper">
-                <img src="/assets/devclub.png" alt="devclub" className="devclub" />
+                <img
+                  src="/assets/devclub.png"
+                  alt="devclub"
+                  className="devclub"
+                />
               </div>
               <div className="grafostanicaWrapper">
                 <img

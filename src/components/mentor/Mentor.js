@@ -1,4 +1,4 @@
-import mentors from '../../data';
+import mentors from "../../data";
 
 const Mentor = () => {
   return (
@@ -10,13 +10,13 @@ const Mentor = () => {
               <img src="/assets/mentor1.png" alt="illustration" />
             </div>
             <div className="imgWrapper">
-              <img src="/assets/mentor1.png" alt="illustration" />
+              <img src="/assets/mentor2.png" alt="illustration" />
             </div>
             <div className="imgWrapper">
-              <img src="/assets/mentor1.png" alt="illustration" />
+              <img src="/assets/mentor3.png" alt="illustration" />
             </div>
             <div className="imgWrapper">
-              <img src="/assets/mentor1.png" alt="illustration" />
+              <img src="/assets/mentor4.png" alt="illustration" />
             </div>
           </div>
           <div className="rightTopContent">
