@@ -31,7 +31,10 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
             <span>NAGRADE</span>
           </li>
         </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform"
+          target="_blank"
+        >
           <button className="register" onClick={() => setMenuOpen(false)}>
             Prijavi se
           </button>

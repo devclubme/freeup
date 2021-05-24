@@ -15,7 +15,10 @@ const Hero = () => {
               frilenseri na globalnom tržištu.
             </p>
             <div className="buttonWrapper">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform"
+                target="_blank"
+              >
                 <button className="register">Prijavi se</button>
               </a>
             </div>
