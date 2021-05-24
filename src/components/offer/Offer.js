@@ -5,9 +5,9 @@ const Offer = () => {
         <div className="leftContent">
           <h1 className="title">Vrijeme je da se oprobaš kao frilenser</h1>
           <p className="description">
-            Nudimo ti besplatnu obuku od 5 povezanih događaja gdje će
-            srednjoškolci i studenti čuti iskustva u praksi direktno od iskusnih
-            lokalnih frilensera.
+            Nudimo ti besplatnu online obuku koju čini 7 povezanih događaja. Vi
+            srednjoškolci, studenti i mladi profesionalci imaćete priliku da čujete iskustva
+            i savjete iz prakse direktno od naših najuspješnijih lokalnih frilensera.
           </p>
         </div>
         <div className="rightContent">
