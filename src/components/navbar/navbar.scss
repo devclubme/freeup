@@ -1,4 +1,4 @@
-@import '../../includeMedia.scss';
+@import "../../includeMedia.scss";
 
 $breakpoints: (
   phone: 320px,
@@ -19,7 +19,7 @@ $breakpoints: (
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include media('>=phone', '<=tablet') {
+    @include media(">=phone", "<=tablet") {
       padding: 30px 40px 40px 20px;
     }
     .logo {
@@ -36,7 +36,7 @@ $breakpoints: (
       flex: 5;
       justify-content: flex-end;
       align-items: center;
-      @include media('>=phone', '<=desktop') {
+      @include media(">=phone", "<=desktop") {
         display: none;
       }
       .menuItems {
@@ -91,7 +91,7 @@ $breakpoints: (
     }
     .hamburger {
       display: none;
-      @include media('>=phone', '<=desktop') {
+      @include media(">=phone", "<=desktop") {
         width: 32px;
         height: 25px;
         display: flex;
