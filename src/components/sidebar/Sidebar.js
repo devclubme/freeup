@@ -1,8 +1,8 @@
 const Sidebar = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className={`sidebar ${menuOpen ? 'active' : ''}`}>
+    <div className={`sidebar ${menuOpen ? "active" : ""}`}>
       <div
-        className={`hamburger ${menuOpen ? 'active' : ''}`}
+        className={`hamburger ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <span className="line1"></span>
@@ -31,10 +31,14 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
             <span>NAGRADE</span>
           </li>
         </a>
-
-        <button className="register" onClick={() => setMenuOpen(false)}>
-          Prijavi se
-        </button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdeR-GEMHpwMD8E0W84NseWtN_AOCReJmbp_i3jUrTeHwmQPg/viewform"
+          target="_blank"
+        >
+          <button className="register" onClick={() => setMenuOpen(false)}>
+            Prijavi se
+          </button>
+        </a>
       </ul>
     </div>
   );
