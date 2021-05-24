@@ -1,4 +1,4 @@
-@import '../../includeMedia.scss';
+@import "../../includeMedia.scss";
 $breakpoints: (
   phone: 320px,
   tablet: 768px,
@@ -13,11 +13,11 @@ $breakpoints: (
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include media('>=phone', '<=desktop') {
+    @include media(">=phone", "<=desktop") {
       flex-direction: column;
       align-items: flex-start;
     }
-    @include media('>=phone', '<=tablet') {
+    @include media(">=phone", "<=tablet") {
       padding: 30px 40px 100px 20px;
     }
     .leftContent {
@@ -27,14 +27,16 @@ $breakpoints: (
       margin-right: 100px;
       .title {
         font-size: 58px;
-        @include media('>=phone', '<=desktop') {
+        @include media(">=phone", "<=desktop") {
           font-size: 48px;
         }
         font-weight: 700;
       }
       .description {
+        max-width: 500px;
+        min-width: 270px;
         margin-top: 60px;
-        @include media('>=phone', '<=desktop') {
+        @include media(">=phone", "<=desktop") {
           margin-top: 20px;
         }
       }
@@ -42,7 +44,7 @@ $breakpoints: (
 
     .rightContent {
       flex: 6;
-      @include media('>=phone', '<=desktop') {
+      @include media(">=phone", "<=desktop") {
         margin-top: 20px;
       }
       .panelWrapper {
@@ -56,7 +58,7 @@ $breakpoints: (
           flex-direction: column;
           -webkit-box-shadow: 36px 36px 0px 0px #000000;
           box-shadow: 36px 36px 0px 0px #000000;
-          @include media('>=phone', '<=tablet') {
+          @include media(">=phone", "<=tablet") {
             padding: 50px 20px;
             -webkit-box-shadow: 16px 16px 0px 0px #000000;
             box-shadow: 16px 16px 0px 0px #000000;
