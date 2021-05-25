@@ -1,12 +1,12 @@
 import BaseDocument, { Head, Html, Main, NextScript } from "next/document";
 
-const gaTrackingId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID;
-const gaScript = `\
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', '${gaTrackingId}');
+const gtmContainerId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_CONTAINER_ID;
+const gtmScript = `\
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${gtmContainerId}');
 `;
 
 const fbPixelId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
@@ -39,12 +39,11 @@ class Document extends BaseDocument {
     return (
       <Html lang="sr">
         <Head>
-          {gaTrackingId && (
+          {gtmContainerId && (
             <>
-              <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}></script>
               <script
                 dangerouslySetInnerHTML={{
-                  __html: gaScript,
+                  __html: gtmScript,
                 }}
               />
             </>
@@ -84,6 +83,16 @@ class Document extends BaseDocument {
           ></link>
         </Head>
         <body>
+          {gtmContainerId && (
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${gtmContainerId}`}
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              />
+            </noscript>
+          )}
           <Main />
           <NextScript />
         </body>
