@@ -51,14 +51,14 @@ const mentors = [
   {
     id: "8",
     name: "Marko Čurović",
-    employment: "Content Writting",
+    employment: "Content Writing",
     role: "Mentor",
     avatar: "/assets/17.png",
   },
   {
     id: "9",
     name: "Tijana Ostojić",
-    employment: "Content Writting",
+    employment: "Content Writing",
     role: "Mentor",
     avatar: "/assets/10.png",
   },
