@@ -32,26 +32,30 @@ const Hero = () => {
         <div className="bottomContent">
           <div className="bottomContentWrapper">
             <div className="creators">
-              <div className="devclubWrapper">
+              <a href="https://zurnal.devclub.me/" className="devclubWrapper">
                 <img
                   src="/assets/devclub.png"
                   alt="devclub"
                   className="devclub"
                 />
-              </div>
-              <div className="grafostanicaWrapper">
+              </a>
+
+              <a
+                href="https://www.instagram.com/Grafostanica/"
+                className="grafostanicaWrapper"
+              >
                 <img
                   src="assets/grafostanica.png"
                   alt="grafostanica"
                   className="grafostanica"
                 />
-              </div>
+              </a>
             </div>
             <div className="sponsoredBy">Podržao</div>
             <div className="sponsor">
-              <div className="undpWrapper">
+              <a href="https://www.me.undp.org/" className="undpWrapper">
                 <img src="/assets/undp.png" alt="undp" className="undp" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
