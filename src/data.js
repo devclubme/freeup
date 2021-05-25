@@ -9,7 +9,7 @@ const mentors = [
   {
     id: "2",
     name: "Tjaša Deu",
-    employment: "Youtube",
+    employment: "YouTube Marketing",
     role: "Mentor, Panelista",
     avatar: "/assets/14.png",
   },
