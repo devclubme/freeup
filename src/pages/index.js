@@ -22,10 +22,7 @@ const App = () => {
           content="FreeUP je informativna i praktična obuka za sve mlade na početku karijere koji žele da se oprobaju kao frilenseri na globalnom tržištu."
         />
         {/* TODO: use actual url */}
-        <meta
-          property="og:url"
-          content="https://elastic-almeida-b7f4be.netlify.app"
-        />
+        <meta property="og:url" content="https://www.freeup.me" />
         <meta property="og:title" content="FreeUP" />
         <meta
           property="og:description"
@@ -33,7 +30,7 @@ const App = () => {
         />
         <meta
           property="og:image"
-          content="https://elastic-almeida-b7f4be.netlify.app/assets/freeup-favicon.png"
+          content="https://www.freeup.me/assets/freeUpMeta.jpg"
         />
       </Head>
       <div className="app">
