@@ -10,14 +10,14 @@ const mentors = [
     id: "2",
     name: "Tjaša Deu",
     employment: "Youtube",
-    role: "Mentor, panelista",
+    role: "Mentor, Panelista",
     avatar: "/assets/14.png",
   },
   {
     id: "3",
     name: "Ivan Radunović",
     employment: "Software Development",
-    role: "Mentor, panelista",
+    role: "Mentor, Panelista",
     avatar: "/assets/5.png",
   },
   {
