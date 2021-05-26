@@ -146,7 +146,7 @@ const Period = () => {
               />
             </div>
             <div className="content">
-              <h3 className="title">Frilensujmo!</h3>
+              <h3 className="title">Frilensujmo</h3>
               <p className="description">
                 Na kraju dajemo ti priliku da nam pokažeš koliko želiš da budeš
                 frilenser. Pokaži nam kako si usvojio savjete mentora tokom
