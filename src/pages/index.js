@@ -9,7 +9,7 @@ import Offer from "../components/offer/Offer";
 import Period from "../components/period/Period";
 import Reward from "../components/reward/Reward";
 import Sidebar from "../components/sidebar/Sidebar";
-
+import Interview from "../components/interview/Interview";
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,6 +40,7 @@ const App = () => {
           <Hero />
           <Offer />
           <Period />
+          <Interview />
           <Mentor />
           <Reward />
         </div>

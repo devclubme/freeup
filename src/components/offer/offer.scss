@@ -25,6 +25,10 @@ $breakpoints: (
       flex-direction: column;
       flex: 5;
       margin-right: 100px;
+      @include media(">=phone", "<=desktop") {
+        margin-right: 0px;
+        max-width: 500px;
+      }
       .title {
         font-size: 58px;
         @include media(">=phone", "<=desktop") {
