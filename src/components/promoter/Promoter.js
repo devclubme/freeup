@@ -12,7 +12,7 @@ const Promoter = () => {
               <img src="/assets/elektro-logo.png" alt="logo" className="logo" />
             </div>
             <div className="imgWrapper">
-              <img src="/assets/nest-logo.png" alt="logo" className="logo" />
+              <img src="/assets/vaso-logo.png" alt="logo" className="logo" />
             </div>
             <div className="imgWrapper">
               <img
@@ -22,7 +22,7 @@ const Promoter = () => {
               />
             </div>
             <div className="imgWrapper">
-              <img src="/assets/vaso-logo.png" alt="logo" className="logo" />
+              <img src="/assets/nest-logo.png" alt="logo" className="logo" />
             </div>
           </div>
         </div>
