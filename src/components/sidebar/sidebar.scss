@@ -1,4 +1,4 @@
-@import '../../includeMedia.scss';
+@import "../../includeMedia.scss";
 
 $breakpoints: (
   phone: 320px,
@@ -8,7 +8,7 @@ $breakpoints: (
 
 .sidebar {
   display: none;
-  @include media('>=phone', '<=desktop') {
+  @include media(">=phone", "<=desktop") {
     position: fixed;
     top: 0;
     z-index: 2;

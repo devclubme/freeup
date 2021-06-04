@@ -1,0 +1,54 @@
+@import "../../includeMedia.scss";
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1250px,
+);
+.promoter {
+  width: 100%;
+  background-color: #f0f0f0;
+  .wrapper {
+    width: 100%;
+    padding: 150px 150px 150px 120px;
+    @include media(">=phone", "<=tablet") {
+      padding: 30px 40px 100px 20px;
+    }
+    .logo-cloud {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      .promoters {
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        margin-top: 60px;
+        align-items: center;
+        justify-content: space-between;
+        @include media(">=phone", "<=desktop") {
+          flex-direction: column;
+          margin-top: 60px;
+        }
+        > :not(:nth-child(5)) {
+          margin-right: 50px;
+          @include media(">=phone", "<=desktop") {
+            margin-right: 0;
+          }
+        }
+        .imgWrapper {
+          text-align: center;
+          @include media(">=phone", "<=desktop") {
+            width: 150px;
+            margin-top: 20px;
+          }
+          .logo {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
