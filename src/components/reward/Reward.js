@@ -41,23 +41,6 @@ const Reward = () => {
             <div className="triangle"></div>
           </div>
         </div>
-        {/* <div className="logo-cloud">
-          <div className="imgWrapper">
-            <img src="/assets/fit-logo.png" alt="logo" className="logo" />
-          </div>
-          <div className="imgWrapper">
-            <img src="/assets/elektro-logo.png" alt="logo" className="logo" />
-          </div>
-          <div className="imgWrapper">
-            <img src="/assets/nest-logo.png" alt="logo" className="logo" />
-          </div>
-          <div className="imgWrapper">
-            <img src="/assets/propeler-logo.png" alt="logo" className="logo" />
-          </div>
-          <div className="imgWrapper">
-            <img src="/assets/vaso-logo.png" alt="logo" className="logo" />
-          </div>
-        </div> */}
       </div>
     </div>
   );

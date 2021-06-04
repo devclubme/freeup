@@ -1,15 +1,16 @@
 import { useState } from "react";
 import Head from "next/head";
 
-import Footer from "../components/footer/Footer";
-import Hero from "../components/hero/Hero";
-import Mentor from "../components/mentor/Mentor";
-import Navbar from "../components/navbar/Navbar";
-import Offer from "../components/offer/Offer";
-import Period from "../components/period/Period";
-import Reward from "../components/reward/Reward";
-import Sidebar from "../components/sidebar/Sidebar";
-import Interview from "../components/interview/Interview";
+import Footer from "components/footer/Footer";
+import Hero from "components/hero/Hero";
+import Mentor from "components/mentor/Mentor";
+import Navbar from "components/navbar/Navbar";
+import Offer from "components/offer/Offer";
+import Period from "components/period/Period";
+import Reward from "components/reward/Reward";
+import Sidebar from "components/sidebar/Sidebar";
+import Interview from "components/interview/Interview";
+import Promoter from "components/promoter/Promoter";
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -43,6 +44,7 @@ const App = () => {
           <Interview />
           <Mentor />
           <Reward />
+          <Promoter />
         </div>
         <Footer />
       </div>

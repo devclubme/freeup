@@ -1,12 +1,13 @@
-import "../components/offer/offer.scss";
-import "../components/hero/hero.scss";
-import "../components/sidebar/sidebar.scss";
-import "../components/period/period.scss";
-import "../components/footer/footer.scss";
-import "../components/navbar/navbar.scss";
-import "../components/mentor/mentor.scss";
-import "../components/reward/reward.scss";
+import "components/offer/offer.scss";
+import "components/hero/hero.scss";
+import "components/sidebar/sidebar.scss";
+import "components/period/period.scss";
+import "components/footer/footer.scss";
+import "components/navbar/navbar.scss";
+import "components/mentor/mentor.scss";
+import "components/reward/reward.scss";
 import "components/interview/interview.scss";
+import "components/promoter/promoter.scss";
 import "./app.scss";
 
 function App({ Component, pageProps }) {
